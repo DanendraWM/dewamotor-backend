@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('nama_cabang');
             $table->string('alamat');
             $table->string('kontak');
+            $table->integer('jumlah_target');
             $table->softDeletes();
             $table->timestamps();
         });

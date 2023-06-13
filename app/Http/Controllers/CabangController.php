@@ -42,6 +42,8 @@ class CabangController extends Controller
             'nama_cabang'=>$request->nama_cabang,
             'alamat'=>$request->alamat,
             'kontak'=>$request->kontak,
+            'jumlah_target'=>$request->jumlah_target,
+
         ]);
         return response()->json([
             'data'=>$cabang
@@ -87,6 +89,7 @@ class CabangController extends Controller
             'nama_cabang'=>$request->nama_cabang,
             'alamat'=>$request->alamat,
             'kontak'=>$request->kontak,
+            'jumlah_target'=>$request->jumlah_target,
         ]);
         return response()->json([
             'data'=>$cabang
